@@ -18,7 +18,7 @@
         <td><%= user.name %></td>
         <td><%= user.team.name %></td>
         <% if user.avatar.url %>
-        <td><%= image_tag user.avatar.url(:thumb) %></td>
+        <td><%= image_tag user.avatar %></td>
         <% end %>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
